@@ -76,7 +76,6 @@ const nodejsscanIntegration = {
                 save_intermediates_to,
                 excludes,
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -85,7 +84,6 @@ const nodejsscanIntegration = {
                 save_intermediates_to,
                 excludes,
                 status,
-                mode,
             }
         },
         modal() {
