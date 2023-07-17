@@ -8,14 +8,14 @@ const nodejsscanIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
                 excludes,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -63,6 +63,7 @@ const nodejsscanIntegration = {
         initialState: () => ({
             // toggle: false,
             error: {},
+            config: {},
             save_intermediates_to: '/data/intermediates/sast',
             excludes: "",
         })
