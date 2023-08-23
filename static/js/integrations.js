@@ -32,7 +32,7 @@ const nodejsscanIntegration = {
                     :class="{ 'is-invalid': error.excludes }">
                 <div class="invalid-feedback">[[ error.excludes ]]</div>
 
-                <h9>Save intermediates to</h9>
+                <!--<h9>Save intermediates to</h9>
                 <p>
                     <h13>Optional</h13>
                 </p>
@@ -40,7 +40,7 @@ const nodejsscanIntegration = {
                        placeholder=""
                        v-model="save_intermediates_to"
                        :class="{ 'is-invalid': error.save_intermediates_to }">
-                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>-->
             </div>
         </template>
         <template #footer>
@@ -73,7 +73,7 @@ const nodejsscanIntegration = {
                 config,
                 is_default,
                 project_id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 excludes,
                 status,
             } = this
@@ -81,7 +81,7 @@ const nodejsscanIntegration = {
                 config,
                 is_default,
                 project_id,
-                save_intermediates_to,
+                // save_intermediates_to,
                 excludes,
                 status,
             }
@@ -210,7 +210,7 @@ const nodejsscanIntegration = {
             test_connection_status: 0,
             id: null,
 
-            save_intermediates_to: '/data/intermediates/sast',
+            // save_intermediates_to: '/data/intermediates/sast',
             excludes: "",
 
             pluginName: 'security_scanner_nodejsscan',
